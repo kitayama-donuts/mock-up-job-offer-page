@@ -1,0 +1,22 @@
+{
+  "name": "ats",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "exportsOverride": {
+    "sanitize-css": {
+      "": [
+        "sanitize.css"
+      ]
+    }
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "sanitize-css": "^4.1.0"
+  }
+}

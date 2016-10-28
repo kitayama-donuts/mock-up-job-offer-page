@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"href="bower/sanitize-css/sanitize.css">
+  <link rel="stylesheet"href="style/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <title></title>
+</head>
+<body>
+  <header class="header">
+    <div class="pc-header sp-hide">
+      <div class="header-custum">
+      </div>
+      <div class="header-logo-inner">
+        <img src="images/l-o-g-o.png" alt="logo" >
+      </div>
+    </div>
+    <div class="sp-header">
+      <div class="sp-header-img">
+        <img src="images/l-o-g-o.png" alt="logo">
+      </div>
+      <div class="sp-header-button">
+        <button type="button" class="js-toggle-search">
+          <img src="images/search.svg" alt="search">
+        </button>
+      </div>
+    </div>
+    <div class="sp-search-content is-hide">
+      <ul class="sp-search-menu">
+        <li><input type="text" placeholder="フリーワード" class="input-text"></li>
+        <li>
+          <div class="search-select">
+            <select>
+              <option value="">職種</option>
+              <option value="">職種</option>
+              <option value="">職種</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="search-select">
+            <select>
+              <option value="">勤務地</option>
+              <option value="">勤務地</option>
+              <option value="">勤務地</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="search-select">
+            <select>
+              <option value="">雇用形態</option>
+              <option value="">雇用形態</option>
+              <option value="">雇用形態</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+      <div class="button-area">
+        <input type="submit" class="search-button" value="この条件で検索" style="background-color:#1abc9c;color:#fff;">
+      </div>
+    </div>
+  </header>
+  <section class="section-narrow" style="background-color: #f6f6f6;">
+    <div class="content-box-wide">
+      <ul class="breadcrumb sp-hide">
+        <li><a href="#">求人TOP</a></li>
+        <li><a href="#">求人一覧</a></li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <ul class="footer-nav-list">
+      <li><a href="#">会社概要</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    <ul class="footer-social-list">
+      <li><a href="#"><img src="images/twitter.svg" alt="Facebook"></a></li>
+      <li><a href="#"><img src="images/facebook.svg" alt="Twitter"></a></li>
+    </ul>
+    <p class="copyright"><small>Copyright © 2016 aaaccc. All Rights Reserved.</small></p>
+  </footer>
+  <script src="js/search.js" ></script>
+</body>
+</html>
