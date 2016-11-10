@@ -247,6 +247,7 @@ ul {
   background-color: #fff;
   margin: 0 auto 20px;
   box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.6);
+  position: relative;
 }
 
 .job-offer-main-image {
@@ -276,6 +277,16 @@ ul {
   font-size: 20px;
 }
 
+.job-offer-detail-title {
+  @extend .job-offer-title;
+  font-size: 24px;
+}
+
+.job-offer-detail-sub-title {
+  @extend .job-offer-title;
+  font-size: 18px;
+}
+
 .job-offer-text {
   font-size: 14px;
   margin-bottom: 17px;
@@ -288,14 +299,19 @@ ul {
 
 .job-offer-address {
   font-size: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .job-offer-table {
-  padding-top: 20px;
-  border-top: solid 1px #ddd;
   display: table;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.job-offer-table-line {
+  @extend .job-offer-table;
+  padding-top: 20px;
+  border-top: solid 1px #ddd;
 }
 
 .job-offer-table-left {
@@ -310,6 +326,10 @@ ul {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
+
+  > .social-list {
+    padding-top: 0;
+  }
 }
 
 .map-content {
@@ -352,6 +372,7 @@ ul {
   display: flex;
   height: 140px;
   flex-flow: column wrap;
+  width: 100px;
 }
 
 .map-content-1 {
@@ -594,6 +615,53 @@ ul {
   }
 }
 
+.slider-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-item {
+  width: 240px;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+
+  > p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 960px) {
 
   .sp-hide {
@@ -695,7 +763,7 @@ ul {
     padding: 10px 15px;
   }
 
-  .job-offer-table {
+  .job-offer-table-line {
     padding-top: 0;
     border: none;
     display: flex;
@@ -719,5 +787,13 @@ ul {
       color: #333;
       text-decoration: none;
     }
+  }
+
+  .slider-wrap {
+    justify-content: center;
+  }
+
+  .slider-item {
+    width: 85%;
   }
 }
