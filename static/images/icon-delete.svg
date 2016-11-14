@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>B37DC980-FA43-42EA-B551-A0D4E38F31B6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon_delete" stroke="#333333" stroke-width="1.5">
+            <g id="icon" transform="translate(3.000000, 2.000000)">
+                <path d="M12.8586333,4.80923333 L12.8586333,13.8852333 C12.8586333,14.4069 12.3935349,14.8299 11.8195836,14.8299 L2.89768308,14.8299 C2.3240983,14.8299 1.85863333,14.4069 1.85863333,13.8852333 L1.85863333,2.6429" id="Stroke-1"></path>
+                <g id="Group" transform="translate(6.000000, 4.000000)">
+                    <path d="M0,0.865233333 L0,8.6079" id="Stroke-3"></path>
+                    <path d="M3,0.865233333 L3,8.6079" id="Stroke-5"></path>
+                </g>
+                <path d="M7.5,0 L7.5,1.40933333" id="Stroke-7"></path>
+                <path d="M0,2 L14,2" id="Stroke-9"></path>
+            </g>
+        </g>
+    </g>
+</svg>

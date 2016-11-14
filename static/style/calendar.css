@@ -1,0 +1,11 @@
+.c-calendar {
+  color: #888;
+  display: inline-block;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 10px 5px;
+  position: relative;
+  overflow: hidden;
+  height: 40px; }
+  .c-calendar > input {
+    width: 140px; }

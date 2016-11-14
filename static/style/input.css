@@ -1,0 +1,10 @@
+.c-inputText, .c-inputText--narrow {
+  background-color: #fff;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  height: 40px; }
+
+.c-inputText--narrow {
+  height: 40px; }

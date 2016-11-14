@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.section-wide.entry-form-page {
+  background: #f6f6f6; }
+  .section-wide.entry-form-page .content-box {
+    padding: 40px;
+    background: #fff;
+    border-radius: 4px; }
+
+.form-title {
+  font-size: 20px; }
+
+.form-text {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 24px; }
+
+.alert-text-box {
+  border: 1px solid #e61345;
+  border-radius: 3px; }
+  .alert-text-box .heading {
+    background: #e61345;
+    padding: 5px;
+    text-align: center;
+    color: #fff; }
+  .alert-text-box ul {
+    padding: 20px;
+    color: #e61345;
+    font-size: 13px; }
+    .alert-text-box ul li {
+      margin-bottom: 5px; }
+    .alert-text-box ul li:before {
+      content: "・"; }
+
+.item-name {
+  width: 100%;
+  margin-top: 6px;
+  margin-right: 5%;
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+.c-inputText {
+  width: 100%; }
+
+.c-inputText--narrow {
+  width: 30%; }
+
+.add-text {
+  font-size: 90%;
+  color: #888; }
+
+.error-alert .inner .c-inputText,
+.error-alert .inner .c-inputText--narrow {
+  border: 1px solid #e61345 !important; }
+
+.error-alert .inner .c-radio__indicator {
+  border: 1px solid #e61345 !important; }
+
+.p-form__errorMessage {
+  font-size: 90%;
+  margin-top: 5px;
+  color: #e61345; }
+
+.form-item {
+  margin-bottom: 30px; }
+  .form-item .inner {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap; }
+
+.form-item--textarea .c-inputText {
+  height: auto; }
+
+.form-item--postal-code .c-btn__base {
+  width: 20%;
+  background: #f6f6f6;
+  margin-left: 20px; }
+
+.form-item--radio .inner .c-radio__list {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .form-item--radio .inner .c-radio__list .c-inputText--narrow {
+    width: 74%;
+    margin-left: 2%; }
+
+.form-item--family .unit {
+  margin: 6px 0 0 10px; }
+
+.form-item--edu-career .inner {
+  justify-content: flex-end; }
+  .form-item--edu-career .inner .c-inputText--narrow {
+    padding: 5px;
+    width: 26%; }
+    .form-item--edu-career .inner .c-inputText--narrow:last-child {
+      width: 42%;
+      margin-left: 2%; }
+  .form-item--edu-career .inner .p-form__selectList {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px; }
+    .form-item--edu-career .inner .p-form__selectList li:nth-child(2) {
+      margin: 0 5px; }
+  .form-item--edu-career .inner .c-inputText {
+    margin-bottom: 20px; }
+    .form-item--edu-career .inner .c-inputText:last-child {
+      margin-bottom: 0; }
+
+input[type="month"] {
+  width: 100%;
+  color: #888; }
+
+.form-item--career .inner {
+  justify-content: flex-end; }
+  .form-item--career .inner .c-inputText--narrow {
+    padding: 5px;
+    width: 26%; }
+
+.form-item--career .p-form__selectList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px; }
+  .form-item--career .p-form__selectList li:nth-child(2) {
+    margin: 0 5px; }
+
+.form-item--career .c-inputText {
+  margin-bottom: 20px; }
+
+.form-item--career textarea.c-inputText {
+  margin-bottom: 0; }
+
+.button-box {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left; }
+  .button-box button {
+    margin-right: 15px;
+    width: 23%; }
+    .button-box button:last-child {
+      margin-right: 0; }
+
+.confirm-secion {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 30px 0 0 0; }
+
+@media screen and (max-width: 960px) {
+  .section-wide.entry-form-page {
+    background: #fff; }
+    .section-wide.entry-form-page .content-box {
+      padding: 20px;
+      background: #fff;
+      border-radius: 4px; }
+  .form-item .inner .item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    margin-right: 0; }
+  .form-item .inner .c-inputText {
+    width: 100%; }
+  .form-item .inner .c-inputText--error {
+    border: 1px solid #e61345;
+    width: 100%; }
+  .form-item .inner .c-inputText--narrow {
+    width: 100%; }
+  .add-text {
+    margin-left: 0;
+    color: #888; }
+  .p-form__errorMessage {
+    margin-left: 0;
+    margin-top: 5px;
+    color: #e61345; }
+  .button-box {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .button-box button {
+      width: 47%; }
+  .form-item--radio .c-radio__list {
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center; }
+    .form-item--radio .c-radio__list .c-radio {
+      width: 50%;
+      margin-bottom: 20px; }
+      .form-item--radio .c-radio__list .c-radio:nth-child(3) {
+        width: 5%; }
+  .form-item--postal-code .inner .c-inputText--narrow {
+    width: 48%;
+    margin-right: 2%; }
+  .form-item--postal-code .inner .c-btn__postalcode {
+    width: 50%;
+    margin-left: 0;
+    background: #f6f6f6; }
+  .form-item--radio .inner .c-radio__list {
+    width: 100%;
+    align-items: center; }
+    .form-item--radio .inner .c-radio__list .c-inputText--narrow {
+      width: 90%;
+      margin: 0 0 20px 10px; }
+  .form-item--career .inner {
+    justify-content: flex-start; }
+    .form-item--career .inner .p-form__selectList {
+      flex-wrap: wrap;
+      width: 100%; }
+    .form-item--career .inner .p-form__selectList li:nth-child(2) {
+      margin: 0 auto; }
+  .form-item--edu-career .inner {
+    justify-content: flex-start; }
+    .form-item--edu-career .inner .p-form__selectList {
+      flex-wrap: wrap;
+      width: 100%; }
+    .form-item--edu-career .inner .c-inputText--narrow:last-child {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px; }
+    .form-item--edu-career .inner .p-form__selectList li:nth-child(2) {
+      margin: 0 auto; }
+  .form-item--family .inner .c-inputText--narrow {
+    width: 30%; } }

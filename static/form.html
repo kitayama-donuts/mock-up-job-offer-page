@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower/sanitize-css/sanitize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/radio.css">
+    <link rel="stylesheet" href="style/calender.css">
+    <link rel="stylesheet" href="style/select.css">
+    <link rel="stylesheet" href="style/input.css">
+    <link rel="stylesheet" href="style/btn.css">
+    <link rel="stylesheet" href="style/form.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="pc-header sp-hide">
+        <div class="header-custum">
+        </div>
+        <div class="header-logo-inner">
+          <img src="images/l-o-g-o.png" alt="logo">
+        </div>
+      </div>
+      <div class="sp-header">
+        <div class="sp-header-img">
+          <img src="images/l-o-g-o.png" alt="logo">
+        </div>
+        <div class="sp-header-button">
+          <button type="button" class="js-toggle-search">
+      <img src="images/search.svg" alt="search">
+    </button>
+        </div>
+      </div>
+      <div class="sp-search-content is-hide">
+        <ul class="sp-search-menu">
+          <li><input type="text" placeholder="フリーワード" class="input-text"></li>
+          <li>
+            <div class="search-select">
+              <select>
+          <option value="">職種</option>
+          <option value="">職種</option>
+          <option value="">職種</option>
+        </select>
+            </div>
+          </li>
+          <li>
+            <div class="search-select">
+              <select>
+          <option value="">勤務地</option>
+          <option value="">勤務地</option>
+          <option value="">勤務地</option>
+        </select>
+            </div>
+          </li>
+          <li>
+            <div class="search-select">
+              <select>
+          <option value="">雇用形態</option>
+          <option value="">雇用形態</option>
+          <option value="">雇用形態</option>
+        </select>
+            </div>
+          </li>
+        </ul>
+        <div class="button-area">
+          <input type="submit" class="search-button" value="この条件で検索" style="background-color:#1abc9c;color:#fff;">
+        </div>
+      </div>
+    </header>
+    <!-- form -->
+    <section class="section-wide entry-form-page">
+      <div class="content-box">
+        <section class="content-box-item form-content">
+          <h1 class="form-title">エントリーフォーム：求人名が入ります</h1>
+          <p class="form-text">私たちは、これ以上ないと言い切れるぐらいまでに考えぬき、 最高のサービスを創りあげるためにあくなき追求ができる仲間とともに働いていきたいと思っており、 そんなポリシーを持ち成長意欲のある方を、心よりお待ちしております。
+
+          </p>
+          <div class="alert-text-box">
+            <p class="heading">入力内容に誤りがあります</p>
+            <ul>
+              <li>メールアドレスを入力してください</li>
+              <li>電話番号を入力してください</li>
+              <li>□□□□□□を半角で入力してください</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <div class="content-box-item form-content">
+
+          <section class="form-item error-alert"><!--入力エラー時-->
+            <div class="inner">
+              <div class="item-name">
+                <p>氏名</p>
+              </div>
+              <input class="c-inputText" placeholder="山田太郎">
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <p class="p-form__errorMessage">エラーメッセージ</p>
+          </section>
+
+          <section class="form-item">
+            <div class="inner">
+              <div class="item-name">
+                <p>フリガナ</p>
+              </div><input class="c-inputText" placeholder="ヤマダタロウ">
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+          <section class="form-item">
+            <div class="inner">
+              <div class="item-name">
+                <p>メールアドレス</p>
+              </div><input class="c-inputText" placeholder="example@domain.com
+            ">
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+          <section class="form-item">
+            <div class="inner">
+              <div class="item-name">
+                <p>電話番号</p>
+              </div><input class="c-inputText" placeholder="00-0000-0000">
+              <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          </section>
+
+          <section class="form-item form-item--postal-code">
+            <div class="inner">
+              <div class="item-name">
+                <p>郵便番号</p>
+              </div><input class="c-inputText--narrow" placeholder="000-0000-0000">
+              <button type="button" class="c-btn__base c-btn__postalcode">住所自動入力</button>
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+          <section class="form-item form-item--textarea">
+            <div class="inner">
+              <div class="item-name">
+                <p>住所</p>
+              </div><textarea rows="5" class="c-inputText"></textarea>
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+          <section class="form-item">
+            <div class="inner">
+              <div class="item-name">
+                <p>生年月日</p>
+              </div><input class="c-inputText" placeholder="1980年1月1日">
+            </div>
+            <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+          <section class="form-item form-item--radio">
+          <div class="inner">
+            <div class="item-name">
+              <p>性別</p>
+            </div>
+            <div class="c-radio__list">
+              <label class="c-radio"><input type="radio" name="gender"><div class="c-radio__indicator"></div><span>男性</span></label>
+              <label class="c-radio"><input type="radio" name="gender"><div class="c-radio__indicator"></div><span>女性</span></label>
+              <label class="c-radio"><input type="radio" name="gender"><div class="c-radio__indicator"></div></label>
+              <input placeholder="特記事項がある場合" class="c-inputText--narrow">
+            </div>
+
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--radio ">
+          <div class="inner">
+            <div class="item-name">
+              <p>配偶者</p>
+            </div>
+            <div class="c-radio__list">
+              <label class="c-radio"><input type="radio" name="gender"><div class="c-radio__indicator"></div><span>あり</span></label>
+              <label class="c-radio"><input type="radio" name="gender"><div class="c-radio__indicator"></div><span>なし</span></label>
+            </div>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--family">
+          <div class="inner">
+            <div class="item-name">
+              <p>扶養家族</p>
+            </div><input class="c-inputText--narrow" placeholder="2"><span class="unit">名</span>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--edu-career">
+          <div class="inner">
+            <div class="item-name">
+              <p>最終学歴</p>
+            </div>
+
+            <ul class="p-form__selectList">
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+              <li>〜</li>
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+              <li class="c-inputText--narrow">
+                <div class="c-select">
+                  <select><option value="">就学区分</option>
+                <option value="0">卒業</option>
+                <option value="1">卒業見込み</option>
+                <option value="2">修了</option>
+                <option value="3">修了見込</option>
+                <option value="4">単位取得退学（満期退学）</option>
+                <option value="5">単位取得退学（満期退学）見込</option>
+                <option value="6">在学中</option>
+                <option value="7">休学中</option>
+                <option value="8">退学</option>
+                <option value="9">退学見込</option>
+                <option value="10">除籍</option>
+              </select>
+                </div>
+              </li>
+            </ul>
+            <input class="c-inputText" placeholder="学校名">
+            <input class="c-inputText" placeholder="学部">
+            <input class="c-inputText" placeholder="学科名・研究室名">
+
+          </div>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--textarea">
+          <div class="inner">
+            <div class="item-name">
+              <p>その他学歴（自由入力）</p>
+            </div><textarea rows="5" class="c-inputText"></textarea>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--career">
+          <div class="inner">
+            <div class="item-name">
+              <p>職歴1</p>
+            </div>
+
+            <ul class="p-form__selectList">
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+              <li>〜</li>
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+
+            </ul>
+            <input class="c-inputText" placeholder="会社名">
+            <input class="c-inputText" placeholder="部署・役職">
+            <textarea rows="5" class="c-inputText" placeholder="詳細"></textarea>
+            <div class="item-name">
+              <p>職歴2</p>
+            </div>
+
+            <ul class="p-form__selectList">
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+              <li>〜</li>
+              <li class="c-inputText--narrow">
+                <div class="c-calendar"><input type="month"></div>
+              </li>
+
+            </ul>
+            <input class="c-inputText" placeholder="会社名">
+            <input class="c-inputText" placeholder="部署・役職">
+            <textarea rows="5" class="c-inputText" placeholder="詳細"></textarea>
+            <div class="button-box">
+              <button type="button" class="c-btn__base c-btn--add">職歴を追加</button>
+              <button type="button" class="c-btn__base c-btn--delete">職歴を削除</button>
+            </div>
+          </div>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--textarea">
+          <div class="inner">
+            <div class="item-name">
+              <p>自己PR</p>
+            </div><textarea rows="5" class="c-inputText"></textarea>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--textarea">
+          <div class="inner">
+            <div class="item-name">
+              <p>志望理由</p>
+            </div><textarea rows="5" class="c-inputText" placeholder=""></textarea>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+        <section class="form-item">
+          <div class="inner">
+            <div class="item-name">
+              <p>サイト・SNS等URL</p>
+            </div><input class="c-inputText" placeholder="http://">
+            <div class="button-box">
+              <button type="button" class="c-btn__base c-btn--add">サイトを追加</button>
+              <button type="button" class="c-btn__base c-btn--delete">サイトを削除</button>
+            </div>
+          </div>
+          <p class="add-text">説明テキストがはいる説明テキストがはいる</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+          <section class="form-item form-item--textarea">
+          <div class="inner">
+            <div class="item-name">
+              <p>※テキストエリア</p>
+            </div><textarea rows="5" class="c-inputText"></textarea>
+          </div>
+          <p class="add-text">テキストテキストテキストテキスト</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+
+        <section class="form-item">
+          <div class="inner">
+            <div class="item-name">
+              <p>※一行テキスト</p>
+            </div><input class="c-inputText" placeholder="http://">
+          </div>
+          <p class="add-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+        </section>
+          <section class="form-item">
+            <div class="inner">
+              <div class="item-name">
+                <p>※ここの文言がとても長い場合はこんな感じになります。ここの文言がとても長い場合はこんな感じになります。ここの文言がとても長い場合はこんな感じになります。</p>
+              </div><input class="c-inputText" placeholder="http://">
+            </div>
+            <p class="add-text">テキストテキストテキストテキスト</p>
+            <!-- <p class="p-form__errorMessage">エラーメッセージ</p> -->
+          </section>
+
+        <section class="form-item error-alert">
+          <div class="inner">
+            <div class="item-name">
+              <p>※エラー</p>
+            </div>
+            <input class="c-inputText" placeholder="山田太郎">
+          </div>
+          <p class="add-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="p-form__errorMessage">エラーメッセージ</p>
+        </section>
+
+        <section class="confirm-secion">
+          <button class="c-btn__ellipse c-btn__size--middle c-btn__color--a">確認する</button>
+
+
+        </section>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-nav-list">
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <ul class="footer-social-list">
+        <li>
+          <a href="#"><img src="images/twitter.svg" alt="Facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/facebook.svg" alt="Twitter"></a>
+        </li>
+      </ul>
+      <p class="copyright"><small>Copyright © 2016 aaaccc. All Rights Reserved.</small></p>
+    </footer>
+    <script src="js/search.js"></script>
+    <script src="js/month.component.js"></script>
+  </body>
+
+</html>

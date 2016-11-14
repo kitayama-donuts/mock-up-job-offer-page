@@ -1,0 +1,17 @@
+.c-select {
+  background: #fff url("/images/pulldown.svg") no-repeat 97%;
+  overflow: hidden;
+  text-align: left; }
+  .c-select > select {
+    color: #888;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 13px;
+    padding: 2px 20px 1px 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; }
+    .c-select > select:focus {
+      outline: none; }

@@ -1,0 +1,188 @@
+//---------------------
+//ボタンのスタイル
+//---------------------
+
+//アイコンと一緒のボタンのベース
+.c-btn__base {
+  background-color: #fff;
+  color: #4a4a4a;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0px 15px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.c-btn__icon {
+  position: relative;
+  bottom: 2px;
+  right: 6px;
+}
+
+.c-btn__area {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.c-btn__area--topLine {
+  @extend .c-btn__area;
+  border-top: solid 1px #ddd;
+}
+
+.c-btn__caution {
+  @extend .c-btn__base;
+  border-color: #e61345;
+  color: #e61345;
+}
+
+// 角丸ボタンのベース
+.c-btn__rounded {
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+
+// 楕円ボタンのベース
+.c-btn__ellipse {
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// 通常サイズのボタン
+.c-btn__size--middle {
+  padding: 9px 16px;
+  font-size: 14px;
+  min-width: 110px;
+}
+
+.c-btn__size--small {
+  padding: 6px 7px;
+  font-size: 11px;
+  min-width: 105px;
+}
+
+.c-btn__size--tiny {
+  padding: 5px 9px;
+  font-size: 11px;
+}
+// ボタンのテキスト位置
+.c-btn__textPosition--center {
+  text-align: center;
+}
+
+// ボタンの色：グリーン
+.c-btn__color--a {
+  color: #fff;
+  background-color: #1abc9c;
+
+  &:hover {
+    background-color: #16a085;
+    color: #fff;
+  }
+}
+
+//ボタンの色：ブルー
+.c-btn__color--b {
+  color: #fff;
+  background-color: #3498db;
+
+  &:hover {
+    background-color: #2b7399;
+  }
+}
+
+//ボタンの色：レッド
+.c-btn__color--c {
+  color: #fff;
+  background-color: #e61345;
+}
+
+//ボタンの色：グリーン反転
+.c-btn__color--d {
+  color: #1abc9c;
+  background-color: #fff;
+  border: solid 1px #1abc9c;
+
+  &:hover {
+    color: #16a085;
+    border: solid 1px #16a085;
+  }
+}
+
+//ボタンの色：ホワイト（枠線がグリーン）
+.c-btn__color--d {
+  color: #1abc9c;
+  border: solid 1px #1abc9c;
+
+  &:hover {
+    color: #16a085;
+    border: solid 1px #16a085;
+  }
+}
+
+//ボタンの色：ホワイト（枠線が黒）
+.c-btn__color--e {
+  color: #4a4a4a;
+  border: solid 1px #cccccc;
+
+  &:hover {
+    border: solid 1px #3498db;
+  }
+}
+
+//ボタンの色：灰色
+.c-btn__color--f {
+  color: #bbbbbb;
+  background-color: #eeeeee;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #aaaaaa;
+  }
+}
+
+//ファイルアップロード用のボタンスタイル
+.c-btn__upload {
+  background-color: #f6f6f6;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+  display: inline-block;
+	font-size: 13px;
+	padding: 10px;
+	min-width: 120px;
+  height: 40px;
+  text-align: center;
+
+	> input {
+		display: none;
+	}
+
+	&:hover {
+		background-color: #e7e7e7;
+	}
+}
+
+//エントリー確定用のボタン
+
+.c-btn__base--blue {
+  @extend .c-btn__base;
+  color: #3498db;
+  border-color: #3498db;
+}
+//追加ボタン
+.c-btn--add {
+  background: #fff url('../images/icon-add.svg') no-repeat 5%;
+  padding-left: 25px;
+  height: 40px;
+}
+//削除ボタン
+.c-btn--delete {
+  background: #fff url('../images/icon-delete.svg') no-repeat no-repeat 5%;
+  padding-left: 25px;
+  height: 40px;
+}
